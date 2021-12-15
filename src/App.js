@@ -11,10 +11,10 @@ function App() {
         {/* user card */}
         <div className="user-card">
           <div className="user-info">
-            {/* <img className="user-photo" src='image-jeremy.png' alt="User Profile " /> */}
             <img className="user-photo" src={user_img} alt="User Profile " />
             <p className='report-text'>Report for</p>
-            <p className="user-name">Jeremy Robson</p>
+            <p className="first-name">Jeremy</p>
+            <p className="last-name">Robson</p>
           </div>
           <p className="daily timeline-description">Daily</p>
           <p className="weekly timeline-description">Weekly</p>
@@ -33,6 +33,41 @@ function App() {
             </div>
           </div>
           <div className="stats-card">
+            <img className="svg-icon" src={exerciseSvg} alt="User Profile " />
+            <div className="stats-box">
+              <div className="stats-menu">...</div>
+              <p className="activity">Exercise</p>
+              <p className="current-stats">32hrs</p>
+              <p className="prev-stats">Last Week - 10hrs</p>
+            </div>
+          </div>
+          <div className="stats-card">
+            <img className="svg-icon" src={exerciseSvg} alt="User Profile " />
+            <div className="stats-box">
+              <div className="stats-menu">...</div>
+              <p className="activity">Exercise</p>
+              <p className="current-stats">32hrs</p>
+              <p className="prev-stats">Last Week - 10hrs</p>
+            </div>
+          </div>
+          <div className="stats-card">
+            <img className="svg-icon" src={exerciseSvg} alt="User Profile " />
+            <div className="stats-box">
+              <div className="stats-menu">...</div>
+              <p className="activity">Exercise</p>
+              <p className="current-stats">4hrs</p>
+              <p className="prev-stats">Last Week - 5hrs</p>
+            </div>
+          </div>
+          <div className="stats-card">
+            <img className="svg-icon" src={exerciseSvg} alt="User Profile " />
+            <div className="stats-box">
+              <div className="stats-menu">...</div>
+              <p className="activity">Exercise</p>
+              <p className="current-stats">32hrs</p>
+              <p className="prev-stats">Last Week - 10hrs</p>
+            </div>
+          </div><div className="stats-card">
             <img className="svg-icon" src={exerciseSvg} alt="User Profile " />
             <div className="stats-box">
               <div className="stats-menu">...</div>
