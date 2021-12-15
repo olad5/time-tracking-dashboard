@@ -21,6 +21,7 @@
   --Desktop-size: 1440px;
 
   --Font-size: 18px ;
+  --border-radius:1rem;
 }
 
 
@@ -65,24 +66,25 @@ main {
   width:17rem;
   grid-auto-rows: minmax(25px, auto);
   text-align:left;
-  border-radius:9px;
+  border-radius:var(--border-radius);
   background-color:var(--Dark-blue );
 }
+
 .user-card > * {
   text-align:left;
-  padding-left:20px;
+  padding-left:1.6rem;
 }
 
 
 .user-info {
   display:flex;
   flex-direction:column;
-  border-radius:9px;
+  border-radius:var(--border-radius);
   background-color:var(--blue );
   padding-top:20px;
   padding-bottom:40px;
-
 }
+
 .user-info > p {
   color:white;
 }
@@ -113,5 +115,68 @@ main {
 
 .monthly {
   padding-bottom:2rem;
+}
+
+.stats-cards-container {
+  display:grid;
+  margin-left:10rem;
+  width:17rem;
+  grid-auto-rows: minmax(25px, auto);
+  grid-gap: 1em;
+}
+
+
+
+.stats-menu {
+  padding-right:1rem;
+  text-align:end;
+  font-size:var(--Font-size);
+  grid-column: 2/3;
+}
+
+.activity {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.current-stats {
+
+  grid-column: 1/2;
+  font-size:2rem;
+  align-items:center;
+ display:flex;
+}
+.prev-stats {
+
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+.stats-card {
+  background-color:lightgreen;
+  border-radius:var(--border-radius);
+  display:grid;
+  grid-template-rows:25% 75%;
+}
+
+.stats-box {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  border-radius:var(--border-radius);
+  background-color:var(--Dark-blue );
+  color:white;
+  text-align:left;
+  padding-left:1.6rem;
+}
+
+.svg-icon {
+  display:flex;
+  margin-left:auto;
+  border-radius:var(--border-radius);
+  height:120%;
+  padding-right:1rem;
 }
 
