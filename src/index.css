@@ -134,9 +134,14 @@ main {
   align-self:center;
   padding-right:1.7rem;
   text-align:end;
-  font-size:2rem;
+  font-size:2.3rem;
   grid-column: 2/3;
   color:var(--Pale-Blue);
+}
+
+.stats-menu:hover, .timeline-description:hover {
+  cursor:pointer;
+  color:white;
 }
 
 .activity {
