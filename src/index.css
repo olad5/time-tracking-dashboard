@@ -61,6 +61,7 @@ main {
   width: 100rem;
   margin-top:20rem;
 }
+
 .user-card {
   display:grid;
   width:17rem;
@@ -70,10 +71,6 @@ main {
   background-color:var(--Dark-blue );
 }
 
-.user-card > * {
-  text-align:left;
-  padding-left:1.6rem;
-}
 
 
 .user-info {
@@ -83,6 +80,7 @@ main {
   background-color:var(--blue );
   padding-top:20px;
   padding-bottom:40px;
+ padding-left:1.6rem;
 }
 
 .user-photo {
@@ -94,6 +92,7 @@ main {
 
 .timeline-description {
   display:flex;
+  padding-left:1.6rem;
   align-items:center;
   padding-top:1rem;
   font-size:1.2rem;
@@ -126,8 +125,6 @@ main {
   grid-gap: 1em;
 
 }
-
-
 
 .stats-menu {
   justify-self:end;
@@ -168,10 +165,10 @@ main {
 }
 
 .stats-card {
-  background-color:lightgreen;
+  background-color:var(--Lime-green );
   border-radius:var(--border-radius);
   display:grid;
-  grid-template-rows:25% 75%;
+  grid-template-rows:20% 80%;
 }
 
 .stats-box {
@@ -190,9 +187,133 @@ main {
 .svg-icon {
   display:flex;
   margin-left:auto;
-  border-radius:var(--border-radius);
   height:120%;
   padding-right:1rem;
 }
 
 
+
+    @media only screen and (max-width: 375px) {
+    /* @media only screen and (max-width: 1rem) { */
+              main {
+                  flex-direction:column;
+                  width:375px;
+                  align-items:center;
+                  margin-top:5rem;
+                  margin-bottom:5rem;
+                }
+
+              .user-card{
+                width:90%;
+                grid-template-columns:1fr 1fr 1fr;
+                grid-template-rows:2fr 1fr;
+
+              }
+
+              .daily {
+
+                  padding-left:0;
+
+                  justify-content:center;
+                  grid-column:1/2; 
+              }
+
+              .weekly {
+                  grid-column:2/3; 
+                  padding-left:0;
+              }
+
+              .monthly {
+                  grid-column:3/4; 
+                  padding-left:0;
+                  padding-bottom:0;
+              }
+
+              .timeline-description {
+                  grid-row:2/3;
+                  justify-content:center;
+                  padding-top:0;
+              }
+
+              .stats-cards-container {
+                width:90%;
+                grid-template-columns:1fr;
+                grid-auto-rows: minmax(10rem, auto);
+                grid-row-gap:1em;
+                margin-top:1rem;
+                margin-left:0;
+              }
+
+                .user-info {
+                    display:grid;
+                    grid-template-columns:0.7fr 1fr 1fr;
+                    grid-template-rows:1fr 1fr;
+                    grid-column-gap:0.2em;
+                    padding-bottom:2rem;
+                    grid-column:1/-1;
+
+                }
+
+                .user-photo {
+                  width:6rem;
+                  padding-top:0;
+                  grid-row: 1/3;
+                }
+
+                .report-text {
+                    display:grid;
+                    grid-column: 2/3;
+                    grid-row: 1;
+                    margin-left:0.7rem;
+                    font-size:1.4rem;
+                    align-content:end;
+                }
+
+                .first-name {
+                    margin-left:0.7rem;
+                    grid-column: 2/3;
+                    grid-row: 2;
+                    font-size:2.3rem;
+                }
+
+                .last-name {
+                    grid-column: 3/4;
+                    grid-column: 3/4;
+                    margin-left:-1rem;
+                    grid-row: 2;
+                    font-size:2.3rem;
+                }
+
+                .first-name, .report-text, .last-name {
+                  padding-top:0;
+                }
+
+                .stats-box {
+                    grid-template-rows:1fr 2fr;
+                    grid-template-columns:1fr 1fr;
+                }
+
+                .prev-stats {
+                    grid-column: 2/3;
+                    grid-row: 2;
+                    align-self:center;
+                    justify-self:end;
+                    padding-bottom:0;
+                    padding-right:1.7rem;
+                    padding-top:0.8rem;
+                    font-size:1.1rem;
+                    grid-template-rows:1fr 2fr;
+                }
+
+                .activity {
+                  font-size:1.5rem;
+                }
+
+
+                .current-stats {
+                  font-size:2.5rem;
+                }
+
+
+
+    }
