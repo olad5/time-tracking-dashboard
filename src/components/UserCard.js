@@ -1,3 +1,4 @@
+// user card component
 import UserInfo from './UserInfo.js';
 
 const UserCard = () => {

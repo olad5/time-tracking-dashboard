@@ -1,3 +1,4 @@
+// UserInfo component
 import user_img from '../images/image-jeremy.png';
 const UserInfo = () => {
   return (

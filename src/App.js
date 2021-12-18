@@ -1,32 +1,21 @@
 import './App.css';
-import StatsCard from './components/StatsCard.js';
+import CardsContainer from './components/CardsContainer.js';
 import UserCard from './components/UserCard.js';
+import data from './data.json';
 
 function App() {
 
-  return (
-    <div className="App">
+    return (
+        <div className="App">
 
-      <main>
-
-        <UserCard />
-        <div className="stats-cards-container">
-
-          <>
-            {
-              // each of the user's card
-              [1, 2, 3, 4, 5, 6].map((card, index) => (
-                < StatsCard />
-              ))
-            }
-          </>
-
+            <main>
+                <UserCard />
+                {/* passes the data from the json file to the container component */}
+                <CardsContainer data={data} />
+            </main>
 
         </div>
-      </main>
-
-    </div>
-  );
+    );
 }
 
 export default App;
