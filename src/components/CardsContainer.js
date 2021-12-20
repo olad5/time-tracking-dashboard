@@ -1,12 +1,12 @@
-// card container component
+// Card container component
 import StatsCard from './StatsCard.js';
-const CardsContainer = ({data}) => {
+const CardsContainer = ({data, currentTimeline}) => {
   return (
     <div className="stats-cards-container">
       <>
         {/* make stats card based on the number of activities in the json file */}
         {data.map((activityNum, index) => (
-          < StatsCard activity={activityNum} />
+          < StatsCard currentTimeline={currentTimeline} activity={activityNum} />
         ))}
       </>
     </div>

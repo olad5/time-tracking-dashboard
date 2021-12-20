@@ -7,7 +7,7 @@ import socialSvg from '../images/icon-social.svg';
 import selfCareSvg from '../images/icon-self-care.svg';
 import StatsBox from './StatsBox';
 
-const StatsCard = ({activity}) => {
+const StatsCard = ({activity, currentTimeline}) => {
   const activityTitle = activity.title.toLowerCase()
 
   const icons = {// icons and backgroundColors for the each svg icon
@@ -45,7 +45,7 @@ const StatsCard = ({activity}) => {
   return (
     < div className="stats-card" style={{backgroundColor: iconBg}} >
       < img className="svg-icon" src={iconToUse} alt="User Profile " />
-      <StatsBox data={activity} />
+      <StatsBox currentTimeline={currentTimeline} data={activity} />
     </div >
 
   );
