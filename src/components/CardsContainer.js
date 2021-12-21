@@ -6,7 +6,7 @@ const CardsContainer = ({data, currentTimeline}) => {
       <>
         {/* make stats card based on the number of activities in the json file */}
         {data.map((activityNum, index) => (
-          < StatsCard currentTimeline={currentTimeline} activity={activityNum} />
+          < StatsCard key={index + 1} currentTimeline={currentTimeline} activity={activityNum} />
         ))}
       </>
     </div>
