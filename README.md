@@ -15,6 +15,10 @@ Users should be able to:
 
 ![](./src/images/screenshot.png)
 
+### Links
+
+- Solution URL: [Time Tracking Dashboard](https://francis-time-tracking-dashboard.netlify.app/)
+
 ## My process
 
 ### Built with
