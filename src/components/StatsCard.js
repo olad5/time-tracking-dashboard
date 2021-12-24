@@ -38,8 +38,8 @@ const StatsCard = ({activity, currentTimeline}) => {
 
   }
 
-  let iconToUse = icons.hasOwnProperty(activityTitle) ? icons[activityTitle].icon : null// checks the icon to use for each activity
-  let iconBg = icons.hasOwnProperty(activityTitle) ? icons[activityTitle].iconBg : null // checks the backgroundColor for each of the activity
+  let iconToUse = icons.hasOwnProperty(activityTitle) ? icons[activityTitle].icon : workSvg// checks the icon to use for each activity
+  let iconBg = icons.hasOwnProperty(activityTitle) ? icons[activityTitle].iconBg : "hsl(195, 74%, 62%)"// checks the backgroundColor for each of the activity
 
 
   return (
