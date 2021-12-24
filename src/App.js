@@ -1,7 +1,6 @@
 import './App.css';
 import CardsContainer from './components/CardsContainer.js';
 import UserCard from './components/UserCard.js';
-import data from './data.json';
 import {useState} from "react";
 
 
@@ -16,7 +15,7 @@ function App() {
             <main>
                 <UserCard onTimelineChanged={setNewTimeframe} />
                 {/* passes the current timeline state and data from the json file to the container component */}
-                <CardsContainer currentTimeline={option} data={data} />
+                <CardsContainer currentTimeline={option} />
             </main>
         </div>
     );

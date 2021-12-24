@@ -1,6 +1,8 @@
 // Card container component
 import StatsCard from './StatsCard.js';
-const CardsContainer = ({data, currentTimeline}) => {
+import data from '../data.json';
+
+const CardsContainer = ({currentTimeline}) => {
   return (
     <div className="stats-cards-container">
       <>
