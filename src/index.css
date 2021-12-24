@@ -189,6 +189,10 @@ main {
   padding-left:1.7rem;
 }
 
+.stats-box:hover {
+  background-color:var(--Desaturated-blue );
+}
+
 .svg-icon {
   display:flex;
   width:30%;
