@@ -17,6 +17,11 @@ function App() {
                 {/* passes the current timeline state and data from the json file to the container component */}
                 <CardsContainer currentTimeline={option} />
             </main>
+            <footer>
+                <a href="https://twitter.com/_olad5"><i class="fa fa-twitter "></i></a>
+                <a href="https://github.com/olad5/time-tracking-dashboard"><i class="fa fa-github "></i></a>
+            </footer>
+
         </div>
     );
 }
